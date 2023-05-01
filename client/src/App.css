@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body{
+    margin: 2em 11em 2em 11em;
+  
+}
+.nav{
+    display: flex;
+    gap: 1em;
+   
+    
+}
+.title{
+    flex-grow: 1;
+    font-size:1.5rem ;
+    text-decoration: none;
+    color: black;
+    
+} 
+.Login{
+    text-decoration: none;
+    color: black;
+}
+.Register{
+    text-decoration: none;
+    color: black;
+}
+.initial{
+    background-image: url('https://techcrunch.com/wp-content/uploads/2023/04/elon-owns-twitter.jpg?w=1390&crop=1');
+    height: 100vh;
+    width: 100vw;
+    background-size: auto;
+    margin-top:10vh ;
+    padding-left: 5%;
+    
+}
+.App{
+    overflow: hidden;
+}
+.initialtext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1em;
+   position: relative;
+   top: 80%;
+   color: aliceblue;
+
+    
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.initaldesc{
+    max-width:50%
+}
+.initaltitle{
+    font-weight: bolder;
+   font-size: 1.3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.posts{
+    display: flex;
+    gap: 6em;
+    justify-content:space-evenly;
+    margin-top: 3em;
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.intro{
+    text-align: center;
+    margin-top: 3em;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{
+    font-size:3rem;
+    margin:0
 }
