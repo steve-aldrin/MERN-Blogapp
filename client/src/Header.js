@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (  
         
       <nav className="nav">
-      <a href="" className="title">My Blog</a>
-      <a href="" className="Login">Login</a>
-      <a href="" className="Register">Register</a>
+      <Link to="/" className="title">My Blog</Link>
+      <Link to="/login" className="Login">Login</Link>
+      <Link to="/register" className="Register">Register</Link>
     </nav>
     );
 }
  
+
 export default Header;
