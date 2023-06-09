@@ -9,7 +9,7 @@ app.use(express.json())
 
 
 
-mongoose.connect('mongodb+srv://steve:e5eJVkNFCpOLPZug@cluster0.kvyagyz.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('')
 app.post('/register',async (req,res)=>{
 
 const {username,password}=req.body;
