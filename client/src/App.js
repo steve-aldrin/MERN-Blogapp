@@ -8,34 +8,40 @@ import Layout from './Layout';
 import Homepage from './Pages/Homepage';
 import Loginpage from './Pages/Loginpage';
 import Registerpage from './Pages/Registerpage';
+import { UserContextProvider } from './Usercontext';
+import CreatePost from './Pages/CreatePost';
 function App() {
   return (
+    <UserContextProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={
+            <>
+              <Inital />
 
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={
-          <>
-            <Inital />
+              <Homepage />
 
-            <Homepage />
+            </>
+          }
+          />
+          <Route path={"/login"} element={
 
-          </>
-        }
-        />
-        <Route path={"/login"} element={
+            <Loginpage />
 
-          <Loginpage />
+          } />
+          <Route path={"/register"} element={
+            <Registerpage />
+          } />
+ 
+        <Route path={"/create"} element={
+          <CreatePost/>
+        }/>
+        </Route>
 
-        } />
-         <Route path={"/register"} element={
-        <Registerpage/>
-       }/>
+      </Routes>
 
-
-      </Route>
-
-    </Routes>
-
+    </UserContextProvider>
+    
  
    
   );

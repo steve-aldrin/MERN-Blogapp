@@ -27,7 +27,7 @@ const Registerpage = () => {
             <p>Enter your Email ID and password</p>
             <form action="" className="form" onSubmit={register}>
                 <input type="email" placeholder="Enter Email" value={username} onChange={ev=>setUsername(ev.target.value)}></input>
-                <input type="text" placeholder="Password" value={password} onChange={ev=>setPassword(ev.target.value)}></input>
+                <input type="password" placeholder="Password" value={password} onChange={ev=>setPassword(ev.target.value)}></input>
                 <button className="buttonsign">Sign up</button>
             </form>
         </div>
